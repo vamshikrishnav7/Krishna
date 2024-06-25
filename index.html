@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="description" content="Professional profile of Banda Vamshi Krishna, a Computer Science Engineering student passionate about arts, film editing, and writing.">
+  <title>Krishna Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: url('back.gif') no-repeat center center fixed;
+        background-size: cover;
+        color: #fff;
+        text-align: center;
+        font-family: 'Roboto', Arial, sans-serif; /* Updated font */
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+    }
+    .banner {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        background: url('image.gif') no-repeat center center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+    }
+    .banner h1 {
+        font-size: 2em; /* Decreased font size */
+        margin: 5px 0 0; /* Adjusted margins */
+        text-transform: uppercase; /* Added text transform */
+        font-weight: bold; /* Ensure font is bold */
+        letter-spacing: 2px; /* Adjust letter spacing */
+    }
+    .banner p {
+        font-size: 1.2em; /* Adjusted font size */
+        margin: 5px 0 0; /* Adjusted margins */
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+        z-index: 1;
+    }
+    .header {
+        margin-bottom: 20px;
+        position: relative;
+        padding: 20px;
+    }
+    .header h1 {
+        margin: 0;
+        font-size: 2.5em;
+        color: #ffeb3b;
+        animation: slideInFromTop 1s ease-out;
+    }
+    @keyframes slideInFromTop {
+        from {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    .header p {
+        margin: 5px 0 0;
+        font-size: 1.2em;
+        color: #ddd;
+    }
+    .profile-pic-container {
+        position: relative;
+        display: inline-block;
+        z-index: 2;
+    }
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        background-image: url('profile.png');
+        margin: 0 auto 20px;
+        border: 4px solid #fff;
+        animation: profileIn 1.5s ease-in-out;
+    }
+    @keyframes profileIn {
+        0% {
+            transform: scale(0.5);
+            opacity: 0;
+        }
+        50% {
+            transform: scale(1.2);
+            opacity: 0.7;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    .section {
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 1;
+    }
+    .section h2 {
+        margin: 0;
+        font-size: 1.8em;
+        border-bottom: 2px solid #fff;
+        padding-bottom: 5px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .section h2 img {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+    .section p {
+        margin: 5px 0;
+        line-height: 1.6;
+        color: #eee;
+    }
+    .highlight {
+        color: #ffeb3b;
+        font-weight: bold;
+    }
+    .contact-info {
+        margin-top: 20px;
+        font-size: 1em;
+    }
+    .contact-info a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .contact-info img {
+        width: 30px;
+        height: 30px;
+        vertical-align: middle;
+        margin: 0 10px;
+        animation: bounce 2s infinite;
+    }
+    .social-links a {
+        margin: 0 10px;
+        text-decoration: none;
+    }
+    .social-links img {
+        width: 30px;
+        height: 30px;
+        vertical-align: middle;
+        animation: bounce 0s infinite;
+    }
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+        }
+        40% {
+            transform: translateY(-30px);
+        }
+        60% {
+            transform: translateY(-15px);
+        }
+    }
+    .footer {
+        margin-top: 30px;
+        font-size: 0.9em;
+        color: #ddd;
+    }
+    @media (max-width: 600px) {
+        .header h1 {
+            font-size: 2em;
+        }
+        .header p {
+            font-size: 1em;
+        }
+        .section h2 {
+            font-size: 1.5em;
+        }
+        .section p {
+            font-size: 0.9em;
+        }
+        .contact-info,
+        .social-links {
+            font-size: 0.9em;
+        }
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 10px;
+        }
+        .social-links img, .audio-icon {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    /* Text stroke styles */
+    .yellow-stroke {
+        color: #ffeb3b;
+        -webkit-text-stroke: 0.5px black;
+        text-stroke: 0.5px black;
+        text-transform: uppercase;
+        font-size: 2em; /* Decreased font size */
+        line-height: 1.2; /* Adjusted line height */
+        margin-bottom: 10px; /* Adjusted margin */
+        font-weight: bold; /* Ensure font is bold */
+        letter-spacing: 2px; /* Adjust letter spacing */
+    }
+    .white-stroke {
+        color: #000;
+        -webkit-text-stroke: 1px black;
+        text-stroke: 1px black;
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <div class="profile-pic-container">
+      <div class="profile-pic" alt="Profile Picture of Banda Vamshi Krishna"></div>
+    </div>
+    <h1 class="yellow-stroke">Vamshi Krishna</h1>
+    <p class="white-stroke">@vamshi_krishna_v7</p>
+  </div>
+  <div class="container">
+    <div class="section summary">
+      </h2>
+       Hey Hi, I'm <span class="highlight">Banda Vamshi Krishna!</span>
+      </h2> 
+   <img src="play.icon.png" class="audio-icon" alt="Play Icon">
+  <h2></h2>
+    <p <class="green-text"<span class="highlight">Welcome to my portfolio.</p>
+      
+      <p>I'm currently a Diploma Final year student</span> in <p> <span class="highlight">Computer Science Engineering</span> <p> at <span class="highlight">Mother Teressa Engineering College of Technology</span>. With a passion for technology and creativity, I have developed skills in drawing arts, film,editing, and writing. My academic journey has equipped me with a solid foundation in computer science, while my hobbies have fueled my creativity and attention to detail.</p>
+      <p>Through this portfolio, I aim to showcase my skills, projects, and experiences. <span class="highlight">I am just a beginner.</span> Whether you're here to learn more about my work or simply to connect, I appreciate your visit. Thank you!</p>
+    </div>
+    
+    <div class="section contact-info">
+      <h2>Contact Information</h2>
+      <p></p>
+      <p></p>
+      <div class="social-links">
+        <a href="mailto:bandavamshi30@gmail.com" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Email">
+        </a>
+        <a href="https://instagram.com/vamshi_krishna_v7" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/bandavamshikrishna2457?mibextid=ZbKwL" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2024 Banda Vamshi Krishna </p>
+    </div>
+  
+    <audio id="audioPlayer" hidden>
+      <source src="voice.mp3" type="audio/mpeg">
+     Your browser does not support the audio element.
+    </audio>
+
+    <script>
+      var audio = document.getElementById('audioPlayer');
+      var audioIcon = document.querySelector('.audio-icon');
+
+      // Function to play or pause audio
+      function toggleAudio() {
+        if (audio.paused) {
+          audio.play();
+          audioIcon.src = 'pause.icon.png'; // Replace with your pause icon path
+        } else {
+          audio.pause();
+          audioIcon.src = 'play.icon.png'; // Replace with your play icon path
+        }
+      }
+
+      // Add click event listener to audio icon
+      audioIcon.addEventListener('click', function() {
+        toggleAudio();
+      });
+    </script>
+
+  </div>
+</body>
+</html>
